@@ -1,0 +1,96 @@
+
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 30px;
+    background-color: #1B244A;
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 400px;
+    
+}
+
+.score-div {
+    display: flex;
+    background-color: black;
+    width: 155px;
+    height: 120px;
+    border-radius: 5px;
+    margin: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.score-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h3 {
+    font-weight: 700;
+    font-family: Verdana;
+    font-size: 40px;
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.score-btn {
+    width: 45px;
+    height: 45px;
+    margin: 1px;
+    margin-top: 10px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: transparent;
+    border-color: #9AABD8;
+    border-width: 2px;
+    border-radius: 5px;
+    border-style: solid;
+    color: #9AABD8;
+    cursor: pointer;
+
+}
+
+.score {
+    color: ;
+    font-size: 90px;
+    font-family: 'Cursed Timer ULiL', sans-serif;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    width: 100%;
+    margin: 0;
+}
+
+.ng-btn {
+    padding: 10px;
+    height: 45px;
+    margin: 1px;
+    margin-top: 10px;
+    font-family: 'Cursed Timer ULiL';
+    font-weight: 400;
+    font-size: 18px;
+    background-color:#1B244A;
+    border-color: #9AABD8;
+    border-width: 2px;
+    border-radius: 5px;
+    border-style: solid;
+    color: #9AABD8;
+    cursor: pointer;
+}

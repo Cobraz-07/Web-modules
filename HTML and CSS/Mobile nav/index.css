@@ -1,0 +1,155 @@
+* {
+    font-family: "Roboto";
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    width: 300px;
+    height: 600px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    width: 100%;
+    height: 80%;
+    overflow: hidden;
+}
+
+.profile-div {
+    display: flex;
+    width: 100%;
+    height: auto;
+    align-items: center;
+    padding: 20px;
+}
+
+.profile-img {
+    width: 15%;
+    border-radius: 15px;
+}
+
+.text-div {
+    width: 70%;
+    margin-left: 5%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.name {
+    margin: 0;
+    font-family: "Roboto";
+    font-size: 16px;
+}
+
+.subtitle {
+    margin: 0;
+    font-family: "Roboto";
+    font-size: 16px;
+    color: rgb(136, 136, 136);
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    position: relative;
+    top: 10%;
+}
+
+.nav-ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0px 20px;
+}
+
+.nav-btn {
+    border: none;
+    background-color: transparent;
+    width: 42px;
+    height: 42px;
+    cursor: pointer;
+}
+
+.nav-img {
+    width: 24px;
+}
+
+.active {
+    border-radius: 50%;
+    background-color: rgb(250, 200, 152, 0.2);
+}
+
+.separator {
+    width: 90%;
+    height: 1.5px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 999px;
+    margin: 0px auto;
+}
+
+.section {
+    height: auto;
+    width: 100%;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+.section-ul {
+    margin: 20px;
+}
+
+.list-item {
+    width: 100%;
+    display: flex;
+    margin: 10px 0px;
+    align-items: center;
+    cursor: pointer;
+}
+
+.item-img {
+    background-color: rgb(250, 200, 152, 0.2);
+    height: 32px;
+    width: 32px;
+    padding: 4px;
+    border-radius: 5px;
+}
+
+.item-title {
+    font-size: 14px;
+    font-weight: 700;
+    padding-left: 15px;
+    width: 120px;
+}
+
+.chevron-div {
+    width: 40%;
+    display: flex;
+    justify-content: flex-end;
+}

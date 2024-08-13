@@ -1,0 +1,118 @@
+* {
+    font-family: "Poppins";
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-image: url("img/svg/layered-waves-haikei.svg");
+    background-size: cover;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.container {
+    width: 40%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.form-subtitle {
+    font-size: 14px;
+    font-weight: 600;
+    color: #a5a5a5;
+}
+
+.form-title {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.form-content-1 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.little-field {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
+    width: 45%;
+}
+
+.little-input {
+    border: 1px solid #a5a5a5;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+label {
+    font-size: 10px;
+    font-weight: 600;
+    color: #666666;
+}
+
+.form-content-2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.big-field {
+    display: flex;
+    flex-direction: column;
+    margin: 5px 0px;
+    width: 100%;
+}
+
+.big-input {
+    border: 1px solid #a5a5a5;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+input:focus {
+    outline: none !important;
+    border: 1px solid #ffb672;
+    box-shadow: 0 0 5px #ffb672cc;
+}
+
+.sign-in {
+    font-size: 14px;
+    font-weight: 600;
+    color: #a5a5a5;
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.orange {
+    color: #ffb672;
+    cursor: pointer;
+}
+
+.orange:hover {
+    color: #ffb672cc;
+}
+
+.submit {
+    width: 400px;
+    margin: auto;
+    background-color: #ffb672;
+    border-radius: 999px;
+    cursor: pointer;
+    height: 40px;
+    display: block;
+}
+
+.submit:hover {
+    outline: none !important;
+    border: 1px solid #ffb672;
+    box-shadow: 0 0 5px #ffb672cc;
+}

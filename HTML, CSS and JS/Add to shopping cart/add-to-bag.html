@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="add-to-bag.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+		<main>
+			<div class="cart-container hide" id="cart-container">
+				<div class="cart-title"><h1 class="title">Bag</h1></div>
+				<div class="cart-div">
+					<ul class="bag-list" id="bag-list">
+						<li class="bag-item hide-2" id="bag-item">
+							<div class="item-img-div">
+								<img src="img/pics/img1.jpg" class="item-img">
+							</div>
+							<div class="text-section">
+								<div class="info">
+									<h1 class="item-title">Nike Sportswear Club</h1>
+								</div>
+								<h1 class="item-size" id="item-size">XS</h1>
+								<div class="item-counter-div">
+									<button class="minus" id="minus"><img src="img/svg/remove_24dp_000_FILL0_wght400_GRAD0_opsz24.svg" class="counter-img"></button>
+									<h1 class="count" id="count">0</h1>
+									<button class="plus" id="plus"><img src="img/svg/add_24dp_000_FILL0_wght400_GRAD0_opsz24.svg" class="counter-img"></button>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="checkout">
+					<h1 class="price" id="price"></h1>
+					<div class="checkout-btn-div"><button class="checkout-btn">Checkout</button></div>
+				</div>
+			</div>
+			<div class="cart-btn-div">
+				<button class="cart-btn" id="cart-btn">
+					<p class="cart-btn-text">View Bag</p>
+					<img class="cart-btn-img" src="img/svg/shopping_bag_24dp_000_FILL0_wght400_GRAD0_opsz24.svg">
+				</button>
+			</div>
+			<div class="container" id="container">
+				<div class="img-div">
+					<div class="img-list-div">
+						<ul class="img-list">
+							<li><img src="img/pics/img1.jpg" alt="Photo of T-Shirt" class="little-img" id="img-1"></li>
+							<li><img src="img/pics/img2.jpg" alt="Photo of T-Shirt" class="little-img" id="img-2"></li>
+							<li><img src="img/pics/img3.png" alt="Photo of T-Shirt" class="little-img" id="img-3"></li>
+						</ul>
+					</div>
+					<div class="big-img-div">
+						<img src="img/pics/img1.jpg" alt="Big photo of T-Shirt" class="big-img" id="big-img">
+					</div>
+				</div>
+				<div class="prod-info">
+					<div class="top-section">
+						<div class="brand-name-div">
+							<h4 class="brand-name">NIKE</h4>
+						</div>
+						<div class="prod-name-div">
+							<h1 class="title">Nike Sportswear Club</h1>
+						</div>
+						<div class="prod-description-div">
+							<h4 class="prod-description">Men's T-Shirt</h4>
+						</div>
+					</div>
+					<div class="middle-section">
+						<div class="prod-price-div">
+							<h2 class="prod-price">$</h2>
+							<h2 class="prod-price" id="prod-price">30</h2>
+						</div>
+						<div class="prod-size-container">
+							<h4 class="prod-size-text">CHOOSE SIZE</h4>
+							<div class="prod-size-div">
+								<button class="size-btn active" id="size-btn-1">XS</button>
+								<button class="size-btn" id="size-btn-2">S</button>
+								<button class="size-btn" id="size-btn-3">M</button>
+								<button class="size-btn" id="size-btn-4">L</button>
+								<button class="size-btn" id="size-btn-5">XL</button>
+								<button class="size-btn" id="size-btn-6">XXL</button>
+							</div>
+						</div>
+					</div>
+					<div class="bottom-section">
+						<div class="add-btn-div">
+							<button class="add-btn" id="add-btn">Add to Bag</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</main>
+        <script src="add-to-bag.js"></script>
+    </body>
+</html>

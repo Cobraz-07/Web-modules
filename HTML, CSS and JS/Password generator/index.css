@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    --checkbox-size: 16px;
+    --margin: 16px;
+    --margin-small: calc(var(--margin) / 2);
+    --text-lighter: #ccc;
+    --brand: #55F991;
+}
+
+body {
+    margin: 0;
+    background-color: #1C1C1C;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.title {
+    margin: 0;
+    color: white;
+    font-family: "Karla", sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 40px;
+    margin-left: 52px;
+    margin-top: 55px;
+}
+
+.green-text {
+    color: #10B981;
+}
+
+.subtitle {
+    margin: 0;
+    color: white;
+    font-family: "Inter";
+    font-weight: 200;
+    font-size: 20px;
+    line-height: 28px;
+    margin-left: 52px;
+    margin-top: 10px;
+}
+
+.container {
+    width: 550px;
+    height: 500px;
+    background-color: #1F2937;
+    margin: 64px;
+    border-radius: 25px;
+}
+
+.generate-btn {
+    border: 0;
+    width: Hug (191px);
+    height: Hug (42px);
+    padding: 9px 17px 9px 15px;
+    border-radius: 6px;
+    opacity: 0px;
+    box-shadow: 0px 1px 2px 0px #0000000D;
+    background: #10B981;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    text-align: left;
+    color: white;
+    margin-top: 56px;
+    margin-left: 52px;
+    cursor: pointer;
+}
+
+.section-separator {
+    width: 81%;
+    margin: auto;
+    height: 0px;
+    border: 1px solid #2F3E53;
+    margin-top: 32px;
+}
+
+.password-div {
+    width: 211px;
+    height: 39px;
+    border-radius: 6px;
+    background: #273549;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.password {
+    color: #55F991;
+    font-family: Inter;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+}
+
+.container-section-2 {
+   margin: auto; 
+   display: flex;
+   justify-content: space-between;
+   width: 81%;
+   margin-top: 32px;
+}
+
+.length-label {
+    margin-left: 20px;
+    color: #10B981;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    margin-right: 10px;
+}  
+
+.length-input {
+    width: 30px;
+    margin: 0;
+    appearance: none;
+    font-size: 20px;
+    font-weight: 500;
+    text-align: center;
+    border: solid 1px #55F991;
+    border-radius: 5px;
+    background-color: transparent;
+    color: white;
+
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+input[type="number"] {
+    appearance: none;
+    -moz-appearance: textfield;
+}
+
+.settings-section2 {
+    width: 81%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.input-div {
+    width: 48%;
+    display: flex;
+    align-items: center;
+}
+
+.check-label {
+    color: white;
+    font-family: Inter;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 32px;
+    margin-right: 10px;
+    opacity: 0.5;
+}
+
+.check-btn {
+    border:1px solid #10B981;
+    height: 20px;
+    width: 20px;
+    -webkit-appearance: none;
+    appearance: none;
+    padding: 5px;
+    vertical-align: middle;
+    background-color :transparent;
+    -webkit-transition: background-color 2000ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+    border-radius: 5px;
+    opacity: .5;
+}
+
+.check-btn:checked {
+    background-color: #10B981;
+    -webkit-transition: background-color 2000ms linear;
+    -ms-transition: background-color 200ms linear;
+    transition: background-color 200ms linear;
+}
+

@@ -1,0 +1,48 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="container-section-1">
+                <h1 class="title">Generate a <br><span class="green-text">random password</span></h1>
+                <h4 class="subtitle">Never use an insecure password again.</h4>
+                <div class="settings-section1">
+                    <button class="generate-btn" id="genBtn">Generate passwords</button>
+                    <label class="length-label" for="length">Pass Length:</label>
+                    <input class="length-input" type="number" id="length" min="1" max="20" value="15">
+                </div>
+                <div class="settings-section2">
+                        <div class="input-div">
+                            <label class="check-label" for="checkUpperCase">Uppercse letters:</label>
+                            <input class="check-btn" type="checkbox" id="checkUpperCase" checked="checked">
+                        </div>
+                        <div class="input-div">
+                            <label class="check-label" for="checkLowercase">Lowercase letters:</label>
+                            <input class="check-btn" type="checkbox" id="checkLowercase" checked="checked">
+                        </div>   
+                </div>
+                <div class="settings-section2">
+                    <div class="input-div">
+                        <label class="check-label" for="checkNumbers">Numbers:</label>
+                        <input class="check-btn" type="checkbox" id="checkNumbers" checked="checked">
+                    </div>
+                    <div class="input-div">
+                        <label class="check-label" for="checkSpecial">Special characters:</label>
+                        <input class="check-btn" type="checkbox" id="checkSpecial" checked="checked">
+                    </div>
+                </div>
+            </div>
+            <div class="section-separator"></div>
+            <div class="container-section-2">
+                <div class="password-div" id="pass1Div">
+                    <h5 class="password" id="pass1"></h5>
+                </div>
+                <div class="password-div" id="pass2Div">
+                    <h5 class="password" id="pass2"></h5>
+                </div>
+            </div>
+        </div>
+        <script src="index.js"></script>
+    </body>
+</html>

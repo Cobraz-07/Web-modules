@@ -1,0 +1,35 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="index.css">
+        <link href="https://fonts.cdnfonts.com/css/cursed-timer-ulil" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container">
+            <div class="score-container">
+                <h3>HOME</h3>
+                <div class="score-div">
+                    <h1 class="score" id="score-1">0</h1>
+                </div>
+                <div class="btn-div">
+                    <button class="score-btn" onclick="add1_1()">+1</button>
+                    <button class="score-btn" onclick="add2_1()">+2</button>
+                    <button class="score-btn" onclick="add3_1()">+3</button>
+                </div>
+            </div>
+            <div class="score-container">
+                <h3>AWAY</h3>
+                <div class="score-div">
+                    <h1 class="score" id="score-2">0</h1>
+                </div>
+                <div class="btn-div">
+                    <button class="score-btn" onclick="add1_2()">+1</button>
+                    <button class="score-btn" onclick="add2_2()">+2</button>
+                    <button class="score-btn" onclick="add3_2()">+3</button>
+                </div>
+            </div>
+        </div>
+        <button class="ng-btn" onclick="ngFunct()">New Game</button>
+        <script src="index.js"></script>
+    </body>
+</html>
+
