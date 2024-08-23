@@ -1,0 +1,125 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins", system-ui;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    background-color: #d3d3ff;
+}
+main {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 80%;
+    height: 80%;
+}
+
+.title {
+    font-size: 28px;
+    font-weight: 600;
+}
+
+.title-section {
+    margin-bottom: 40px;
+}
+
+.event-list {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.event {
+    width: 100%;
+    background-color: white;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    max-width: 725px;
+
+}
+
+.day {
+    font-size: 12px;
+    margin-bottom: -5px;
+    font-weight: 600;
+}
+
+.hour {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.event-title {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.text-div {
+    margin: 10px 0px;
+}
+
+.event-desc {
+    font-size: 14px;
+    max-width: 380px;
+}
+
+.button-div {
+    margin: auto;
+}
+
+.sold {
+    font-weight: 600;
+}
+
+.date-div {
+    width: 15%;
+    height: 60px;
+    margin: 15px;
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.event:nth-child(1) > .date-div {
+    background-color: #d09292;
+    color: #632b2b;
+}
+
+.event:nth-child(2) > .date-div {
+    background-color: #a2d0c0;
+    color: #326251;
+}
+
+.event:nth-child(3) > .date-div {
+    background-color: #a4b6dd;
+    color: #2a4070;
+}
+
+.event:nth-child(4) > .date-div {
+    background-color: #ffff99;
+    color: #a3a300;
+}
+
+button {
+    display: flex;
+    background-color: black;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 10px;
+    gap: 5px;
+    font-size: 15px;
+    align-items: center;
+}
