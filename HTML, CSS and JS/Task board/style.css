@@ -1,3 +1,7 @@
+:root {
+    --main-border-radius: 10px;
+}
+
 body {
     width: 100vw;
     height: 100vh;
@@ -37,7 +41,7 @@ main {
     margin-right: 12px;
     width: 225px;
 
-    border-radius: 4px;
+    border-radius: var(--main-border-radius);
     border: none;
 
     box-shadow: 0 0 10px #a5a5a5;
@@ -82,7 +86,7 @@ main {
     flex-direction: column;
     gap: 12px;
     padding: 12px;
-    border-radius: 4px;
+    border-radius: var(--main-border-radius);
     width: 225px;
     min-height: 120px;
     flex-shrink: 0;
@@ -97,7 +101,7 @@ main {
     color: black;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.15);
     padding: 12px;
-    border-radius: 4px;
+    border-radius: var(--main-border-radius);
     font-size: 16px;
     cursor: move;
 }
@@ -118,7 +122,7 @@ main {
 .save {
     background-color: #f4f4f4;
     padding: 10px 30px;
-    border-radius: 4px;
+    border-radius: var(--main-border-radius);
     margin-right: 10px;
     box-shadow: 0 0 10px #a5a5a5;
     transition: all .5s;
