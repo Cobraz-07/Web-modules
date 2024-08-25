@@ -54,14 +54,14 @@ main {
 .plus {
     width: 48px;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.5));
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 .plus:hover {
     opacity: 40%;
     filter: drop-shadow(0 0 10px rgba(0, 0, 0, 1));
     transform: scale(120%);
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 .lanes {
@@ -125,13 +125,13 @@ main {
     border-radius: var(--main-border-radius);
     margin-right: 10px;
     box-shadow: 0 0 10px #a5a5a5;
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 .save:hover {
     opacity: 40%;
     transform: scale(105%);
-    transition: all .5s;
+    transition: all 0.5s;
 }
 
 .button-div {

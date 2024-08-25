@@ -1,47 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Task board</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <link rel="stylesheet" type="text/css" href="preflight.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <script src="drag.js" type="module" defer></script>
-    <script src="todo.js" type="module" defer></script>
-</head>
-<body id="body">
-    <main>
-        <div class="title-div">
-            <h1 class="title">Boards</h1>
-            <form id="todo-form">
-                <input type="text" placeholder="New TODO title..." id="todo-input-1">
-                <input type="text" placeholder="New TODO description..." id="todo-input-2">
-                <button class="plus-btn" type="submit"><img class="plus" src="img/svg/add_24dp_E6E6E6_FILL0_wght400_GRAD0_opsz24.svg"></button>
-            </form>
-        </div>
-        <div class="board">
-            <div class="lanes">
-                <div class="swim-lane" id="todolane">
-                    <h3 class="heading">To do</h3>
-                </div>
-                <div class="swim-lane" id="proglane">
-                    <h3 class="heading">In progress</h3>
-                </div>
-                <div class="swim-lane" id="reviewlane">
-                    <h3 class="heading">Under review</h3>
-                </div>
-                <div class="swim-lane" id="donelane">
-                    <h3 class="heading">Done</h3>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Task board</title>
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" type="text/css" href="preflight.css" />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+            rel="stylesheet"
+        />
+        <script src="drag.js" type="module" defer></script>
+        <script src="todo.js" type="module" defer></script>
+    </head>
+    <body id="body">
+        <main>
+            <div class="title-div">
+                <h1 class="title">Boards</h1>
+                <form id="todo-form">
+                    <input
+                        type="text"
+                        placeholder="New TODO title..."
+                        id="todo-input-1"
+                    />
+                    <input
+                        type="text"
+                        placeholder="New TODO description..."
+                        id="todo-input-2"
+                    />
+                    <button class="plus-btn" type="submit">
+                        <img
+                            class="plus"
+                            src="img/svg/add_24dp_E6E6E6_FILL0_wght400_GRAD0_opsz24.svg"
+                        />
+                    </button>
+                </form>
+            </div>
+            <div class="board">
+                <div class="lanes">
+                    <div class="swim-lane" id="todolane">
+                        <h3 class="heading">To do</h3>
+                    </div>
+                    <div class="swim-lane" id="proglane">
+                        <h3 class="heading">In progress</h3>
+                    </div>
+                    <div class="swim-lane" id="reviewlane">
+                        <h3 class="heading">Under review</h3>
+                    </div>
+                    <div class="swim-lane" id="donelane">
+                        <h3 class="heading">Done</h3>
+                    </div>
                 </div>
             </div>
-        </div>
-        <div class="button-div">
-            <button class="save" id="clear">Clear all</button>
-            <button class="save" id="clear-done">Clear finished tasks</button>
-        </div>
-    </main>
-</body>
+            <div class="button-div">
+                <button class="save" id="clear">Clear all</button>
+                <button class="save" id="clear-done">
+                    Clear finished tasks
+                </button>
+            </div>
+        </main>
+    </body>
 </html>
