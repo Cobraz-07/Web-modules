@@ -5,8 +5,6 @@ const todolane = document.getElementById("todolane");
 const proglane = document.getElementById("proglane");
 const donelane = document.getElementById("donelane");
 const reviewlane = document.getElementById("reviewlane");
-const saveBtn = document.getElementById("save");
-const recoverBtn = document.getElementById("recover");
 const clearBtn = document.getElementById("clear");
 const clearDoneBtn = document.getElementById("clear-done");
 let task = [];
@@ -45,24 +43,12 @@ function save() {
   localStorage.setItem("rev", reviewlane.innerHTML);
 };
 
-function recover() {
-  todolane.innerHTML = localStorage.getItem("todo");
-  proglane.innerHTML = localStorage.getItem("prog");
-  donelane.innerHTML = localStorage.getItem("done");
-  reviewlane.innerHTML = localStorage.getItem("rev");
-  task = document.querySelectorAll("div.task");
-  for (let i = 0; i < task.length; i++) {
-    task[i].addEventListener("dragstart", () => {
-      task[i].classList.add("is-dragging");
-    });
-    task[i].addEventListener("dragend", () => {
-      task[i].classList.remove("is-dragging");
-    });
-  };
-};
-
 function clear() {
   localStorage.clear();
+  localStorage.setItem("todo", `<h3 class="heading">To do</h3>`);
+  localStorage.setItem("prog", `<h3 class="heading">In progress</h3>`);
+  localStorage.setItem("done", `<h3 class="heading">Done</h3>`);
+  localStorage.setItem("rev", `<h3 class="heading">Under review</h3>`);
   todolane.innerHTML = `<h3 class="heading">To do</h3>`;
   proglane.innerHTML = `<h3 class="heading">In progress</h3>`;
   donelane.innerHTML = `<h3 class="heading">Done</h3>`;
@@ -74,8 +60,22 @@ function clearDone() {
   donelane.innerHTML = `<h3 class="heading">Done</h3>`;
 }
 
-saveBtn.addEventListener("click", save);
-recoverBtn.addEventListener("click", recover);
 clearBtn.addEventListener("click", clear);
 clearDoneBtn.addEventListener("click", clearDone);
+
+todolane.innerHTML = localStorage.getItem("todo");
+proglane.innerHTML = localStorage.getItem("prog");
+donelane.innerHTML = localStorage.getItem("done");
+reviewlane.innerHTML = localStorage.getItem("rev");
+task = document.querySelectorAll("div.task");
+for (let i = 0; i < task.length; i++) {
+  task[i].addEventListener("dragstart", () => {
+    task[i].classList.add("is-dragging");
+  });
+  task[i].addEventListener("dragend", () => {
+    task[i].classList.remove("is-dragging");
+  });
+};
+
+export {save}
 

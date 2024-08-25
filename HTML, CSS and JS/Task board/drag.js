@@ -1,6 +1,7 @@
 const draggables = document.querySelectorAll(".task");
-
 const droppables = document.querySelectorAll(".swim-lane");
+
+import {save} from "/HTML, CSS and JS/Task board/todo.js";
 
 draggables.forEach((task) => {
   task.addEventListener("dragstart", (e) => {
@@ -9,6 +10,7 @@ draggables.forEach((task) => {
   });
   task.addEventListener("dragend", () => {
     task.classList.remove("is-dragging");
+    save()
   });
 });
 
@@ -20,8 +22,10 @@ droppables.forEach((zone) => {
 
     if (!bottomTask) {
       zone.appendChild(curTask);
+      save()
     } else {
       zone.insertBefore(curTask, bottomTask);
+      save()
     }
   });
 });
