@@ -11,16 +11,16 @@ function createCard(name) {
                     <p class="breed">${name.breed}</p>
                     <p class="distance"><img src="img/svg/location_on_24dp_D16D6A_FILL1_wght400_GRAD0_opsz24.svg" class="location">${name.distance}</p>
                 </div>
-                <button class="like-btn"><img id="${name.name}-btn" src="" class="black like"></button>`;
+                <button class="like-btn"><img id="${name.name}-like-btn" src="" class="black like"></button>`;
 
 
     petList.appendChild(li);
     
         function changeLikeImg() {
-            document.getElementById(`${name.name}-btn`).classList.toggle("red");
-            document.getElementById(`${name.name}-btn`).classList.toggle("black");
+            document.getElementById(`${name.name}-like-btn`).classList.toggle("red");
+            document.getElementById(`${name.name}-like-btn`).classList.toggle("black");
         };
-        document.getElementById(`${name.name}-btn`).addEventListener("click", changeLikeImg);
+        document.getElementById(`${name.name}-like-btn`).addEventListener("click", changeLikeImg);
 
 }
 
