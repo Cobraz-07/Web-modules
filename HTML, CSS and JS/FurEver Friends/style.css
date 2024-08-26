@@ -4,6 +4,7 @@
 
 * {
     font-family: "Poppins", system-ui;
+    overflow: hidden;
 }
 
 main {
@@ -31,7 +32,6 @@ main {
 .pet-list {
     width: 100%;
     height: auto;
-    overflow: scroll;
     max-height: 80%;
     margin-top: 20px;
     display: flex;
@@ -39,6 +39,8 @@ main {
     align-items: center;
     padding: 10px;
     margin-top: 20px;
+    overflow-y: scroll;
+    scrollbar-width: 0px;
 }
 
 .pet-card {
