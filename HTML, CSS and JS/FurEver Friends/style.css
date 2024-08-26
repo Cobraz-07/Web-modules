@@ -4,12 +4,10 @@
 
 * {
     font-family: "Poppins", system-ui;
-    overflow: hidden;
 }
 
 main {
     margin: 40px 20px;
-    overflow: hidden;
 }
 
 .title-div {
@@ -39,8 +37,6 @@ main {
     align-items: center;
     padding: 10px;
     margin-top: 20px;
-    overflow-y: scroll;
-    scrollbar-width: 0px;
 }
 
 .pet-card {
