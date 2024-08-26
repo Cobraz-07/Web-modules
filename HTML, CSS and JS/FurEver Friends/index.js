@@ -1,6 +1,6 @@
 const petList = document.getElementById("pet-list");
 
-import {bichonFrise, miniPoodle, rottweiler, sheepdogEnglish, spanielSussex, spanielWelsh, terrierAmerican} from "/Web-modules/HTML, CSS and JS/Task board/todo.js";
+import {bichonFrise, miniPoodle, rottweiler, sheepdogEnglish, spanielSussex, spanielWelsh, terrierAmerican} from "/HTML, CSS and JS/FurEver Friends/info.js";
 
 function createCard(name) {
     const li = document.createElement("li");
