@@ -1,6 +1,6 @@
 const petList = document.getElementById("pet-list");
 
-import {bichonFrise, miniPoodle} from "/HTML, CSS and JS/FurEver Friends/info.js"
+import {bichonFrise, miniPoodle, rottweiler, sheepdogEnglish, spanielSussex, spanielWelsh, terrierAmerican} from "/HTML, CSS and JS/FurEver Friends/info.js";
 
 function createCard(name) {
     const li = document.createElement("li");
@@ -19,10 +19,15 @@ function createCard(name) {
         function changeLikeImg() {
             document.getElementById(`${name.name}-btn`).classList.toggle("red");
             document.getElementById(`${name.name}-btn`).classList.toggle("black");
-        }
-        document.getElementById(`${name.name}-btn`).addEventListener("click", changeLikeImg)
+        };
+        document.getElementById(`${name.name}-btn`).addEventListener("click", changeLikeImg);
 
 }
 
 createCard(bichonFrise);
 createCard(miniPoodle);
+createCard(rottweiler);
+createCard(sheepdogEnglish);
+createCard(spanielSussex);
+createCard(spanielWelsh);
+createCard(terrierAmerican);
