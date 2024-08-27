@@ -38,11 +38,11 @@ function createPage(name) {
         <div class="desc-div">
             <p class="desc">${name.description}</p>
         </div>
-        <div class="btn-div">
+       </div>
+       <div class="btn-div">
             <button aria-label="Donate button for ${name.name}" class="donate-btn">Donate<img alt="" src="img/svg/info_24dp_BLACK_FILL1_wght400_GRAD0_opsz24.svg" class="btn-icon"></button>
             <button aria-label="Adopt button for ${name.name}" class="adopt-btn">Adopt<img alt="" src="img/svg/pets_24dp_FFF_FILL0_wght400_GRAD0_opsz24.svg" class="btn-icon"></button>
-        </div>
-       </div>`;
+        </div>`;
 
 
        bodyEl.appendChild(div);
