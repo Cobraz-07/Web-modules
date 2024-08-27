@@ -10,6 +10,7 @@ var urlsToCache = [
 	'./',
 	'./index.html',
 	'./img/svg/icon512_maskable.png',
+	'./img/svg/favorite_24dp_D16D6A_FILL1_wght400_GRAD0_opsz24.svg',
 	'./img/svg/icon512_rounded.png',
 	'./manifest.json',
 	'./style.css',
