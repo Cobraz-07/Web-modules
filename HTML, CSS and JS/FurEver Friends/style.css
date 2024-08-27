@@ -6,6 +6,12 @@
     font-family: "Poppins", system-ui;
 }
 
+body {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
 main {
     margin: 40px 20px;
 }
@@ -97,3 +103,139 @@ main {
 .black {
     content: url("img/svg/favorite_24dp_BLACK_FILL0_wght400_GRAD0_opsz24\ \(1\).svg");
 }
+
+.hide {
+    display: none;
+}
+
+.page {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 2;
+    background-color: white;
+    overflow: hidden;
+}
+
+.big-img {
+    width: 100%;
+    height: 100%;
+}
+
+.big-img-div {
+    height: 40%;
+    width: 100%;
+}
+
+.bottom-section {
+    height: auto;
+    width: 100%;
+    padding: 10px 20px;
+}
+
+.back-btn{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.big-like-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: white;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.big-img {
+    border-radius: 0px 0px 20px 20px;
+}
+
+.big-name {
+    display: flex;
+    font-size: 28px;
+    font-weight: 600;
+    align-items: center;
+    gap: 10px;
+}
+
+.big-gender {
+    width: 30px;
+}
+
+.info-div {
+    width: 100%;
+    display: flex;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.location-div {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    position: absolute;
+    right: 0;
+}
+
+.pop-div {
+    background-color: #e6e6e6;
+    width: 70px;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.pop-title {
+    font-weight: 700;
+}
+
+.pop-text {
+    font-size: 14px;
+    color: rgba(0, 0, 0, .5);
+    font-weight: 600;
+}
+
+.between-spacing {
+    justify-content: space-between;
+}
+
+.desc {
+    font-size: 16px;
+}
+
+.btn-div {
+    width: 100%;
+    display: flex;
+    margin-top: 20px;
+    gap: 10px;
+}
+
+.donate-btn {
+    background-color: #e6e6e6;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+    align-items: center;
+}
+
+.adopt-btn {
+    background-color: #D16D6A;
+    padding: 10px 60px;
+    border-radius: 10px;
+    display: flex;
+    gap: 10px;
+    font-weight: 600;
+    color: white;
+    align-items: center;
+}
+
