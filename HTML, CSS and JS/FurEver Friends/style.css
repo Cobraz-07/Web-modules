@@ -77,14 +77,14 @@ main {
 
 .breed {
     font-size: 14px;
-    color: rgba(0, 0, 0, .5);
+    color: #595959;
     font-weight: 600;
 }
 
 .distance {
     display: flex;
     margin-top: 10px;
-    color: rgba(0, 0, 0, .5);
+    color: #595959;
     font-weight: 600;
 }
 
@@ -199,7 +199,7 @@ main {
 
 .pop-text {
     font-size: 14px;
-    color: rgba(0, 0, 0, .5);
+    color: #595959;
     font-weight: 600;
 }
 
