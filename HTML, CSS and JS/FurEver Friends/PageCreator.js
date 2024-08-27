@@ -1,7 +1,7 @@
 const bodyEl = document.getElementById("body");
 const mainEl = document.getElementById("main");
 
-import {bichonFrise, miniPoodle, rottweiler, sheepdogEnglish, spanielSussex, spanielWelsh, terrierAmerican} from "./PetInfo.js";
+import {PetArray} from "./PetInfo.js";
 
 function createPage(name) {
     const div = document.createElement("div");
@@ -62,10 +62,6 @@ function createPage(name) {
 
 }
 
-createPage(bichonFrise)
-createPage(miniPoodle)
-createPage(rottweiler)
-createPage(sheepdogEnglish)
-createPage(spanielSussex)
-createPage(spanielWelsh)
-createPage(terrierAmerican)
+for (let i = 0; i < PetArray.length; i++) {
+    createPage(PetArray[i])
+}

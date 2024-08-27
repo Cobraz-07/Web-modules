@@ -1,7 +1,7 @@
 const petList = document.getElementById("pet-list");
 const mainEl = document.getElementById("main");
 
-import {bichonFrise, miniPoodle, rottweiler, sheepdogEnglish, spanielSussex, spanielWelsh, terrierAmerican} from "./PetInfo.js";
+import {PetArray} from "./PetInfo.js";
 
 function createCard(name) {
     const li = document.createElement("li");
@@ -35,10 +35,6 @@ function openPage() {
 
 };
 
-createCard(bichonFrise);
-createCard(miniPoodle);
-createCard(rottweiler);
-createCard(sheepdogEnglish);
-createCard(spanielSussex);
-createCard(spanielWelsh);
-createCard(terrierAmerican);
+for (let i = 0; i < PetArray.length; i++) {
+    createCard(PetArray[i])
+}
