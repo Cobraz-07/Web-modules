@@ -50,6 +50,8 @@ function createPage(name) {
         function changeLikeImg() {
             document.getElementById(`${name.name}-big-like-btn`).classList.toggle("red");
             document.getElementById(`${name.name}-big-like-btn`).classList.toggle("black");
+            document.getElementById(`${name.name}-like-btn`).classList.toggle("red");
+            document.getElementById(`${name.name}-like-btn`).classList.toggle("black");
         };
         document.getElementById(`${name.name}-big-like-btn`).addEventListener("click", changeLikeImg);
         function goBack() {

@@ -6,9 +6,8 @@ import {bichonFrise, miniPoodle, rottweiler, sheepdogEnglish, spanielSussex, spa
 function createCard(name) {
     const li = document.createElement("li");
     li.classList.add("pet-card");
-    li.id = `${name.name}-li`;
-    li.innerHTML = `<img src="${name.src}" class="pet-img">
-                <div class="text-div">
+    li.innerHTML = `<img src="${name.src}" class="pet-img" id="${name.name}-img">
+                <div class="text-div" id="${name.name}-text">
                     <h1 class="name">${name.name}<img src="img/svg/${name.gender}_24dp_BLACK_FILL1_wght400_GRAD0_opsz24.svg" class="gender"></h1>
                     <p class="breed">${name.breed}</p>
                     <p class="distance"><img src="img/svg/location_on_24dp_D16D6A_FILL1_wght400_GRAD0_opsz24.svg" class="location">${name.distance}</p>
@@ -23,11 +22,14 @@ function openPage() {
     mainEl.classList.add("hide")
 };
 
-    document.getElementById(`${name.name}-li`).addEventListener("click", openPage);
+    document.getElementById(`${name.name}-img`).addEventListener("click", openPage);
+    document.getElementById(`${name.name}-text`).addEventListener("click", openPage);
 
         function changeLikeImg() {
             document.getElementById(`${name.name}-like-btn`).classList.toggle("red");
             document.getElementById(`${name.name}-like-btn`).classList.toggle("black");
+            document.getElementById(`${name.name}-big-like-btn`).classList.toggle("red");
+            document.getElementById(`${name.name}-big-like-btn`).classList.toggle("black");
         };
         document.getElementById(`${name.name}-like-btn`).addEventListener("click", changeLikeImg);
 
