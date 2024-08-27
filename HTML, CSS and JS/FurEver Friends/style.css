@@ -217,6 +217,7 @@ main {
     margin-top: 20px;
     gap: 10px;
     position: relative;
+    bottom: 0;
     padding: 20px;
 }
 
