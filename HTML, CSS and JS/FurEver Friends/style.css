@@ -216,6 +216,7 @@ main {
     display: flex;
     margin-top: 20px;
     gap: 10px;
+    position: relative;
 }
 
 .donate-btn {
@@ -237,5 +238,7 @@ main {
     font-weight: 600;
     color: white;
     align-items: center;
+    position: absolute;
+    right: 0;
 }
 
