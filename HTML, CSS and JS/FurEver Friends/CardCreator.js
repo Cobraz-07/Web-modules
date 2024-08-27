@@ -6,13 +6,13 @@ import {bichonFrise, miniPoodle, rottweiler, sheepdogEnglish, spanielSussex, spa
 function createCard(name) {
     const li = document.createElement("li");
     li.classList.add("pet-card");
-    li.innerHTML = `<img src="${name.src}" class="pet-img" id="${name.name}-img">
+    li.innerHTML = `<img src="${name.src}" class="pet-img" alt="${name.name} image" id="${name.name}-img">
                 <div class="text-div" id="${name.name}-text">
-                    <h1 class="name">${name.name}<img src="img/svg/${name.gender}_24dp_BLACK_FILL1_wght400_GRAD0_opsz24.svg" class="gender"></h1>
+                    <h1 class="name">${name.name}<img alt="" src="img/svg/${name.gender}_24dp_BLACK_FILL1_wght400_GRAD0_opsz24.svg" class="gender"></h1>
                     <p class="breed">${name.breed}</p>
-                    <p class="distance"><img src="img/svg/location_on_24dp_D16D6A_FILL1_wght400_GRAD0_opsz24.svg" class="location">${name.distance}</p>
+                    <p class="distance"><img alt="" src="img/svg/location_on_24dp_D16D6A_FILL1_wght400_GRAD0_opsz24.svg" class="location">${name.distance}</p>
                 </div>
-                <button class="like-btn"><img id="${name.name}-like-btn" src="" class="black like"></button>`;
+                <button aria-label="Like button for ${name.name}" class="like-btn"><img alt"" id="${name.name}-like-btn" src="" class="black like"></button>`;
 
 
     petList.appendChild(li);
