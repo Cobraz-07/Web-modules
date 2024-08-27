@@ -12,7 +12,7 @@ function createCard(name) {
                     <p class="breed">${name.breed}</p>
                     <p class="distance"><img alt="" src="img/svg/location_on_24dp_D16D6A_FILL1_wght400_GRAD0_opsz24.svg" class="location">${name.distance}</p>
                 </div>
-                <button aria-label="Like button for ${name.name}" class="like-btn"><img alt"" id="${name.name}-like-btn" src="" class="black like"></button>`;
+                <button aria-label="Like button for ${name.name}" class="like-btn"><img alt="" id="${name.name}-like-btn" src="" class="black like"></button>`;
 
 
     petList.appendChild(li);
