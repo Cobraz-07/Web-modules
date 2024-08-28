@@ -1,11 +1,13 @@
 
-            importScripts('https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js');
+importScripts(
+	'https://storage.googleapis.com/workbox-cdn/releases/6.4.1/workbox-sw.js'
+  );
             
             const routing = workbox.routing;
             const strategies = workbox.strategies;
             
             workbox.routing.registerRoute(
-            	/.(?:css|js|jsx|json)(?:|$)/,
+            	/.(?:css|js|jsx|json)$/,
             	new workbox.strategies.StaleWhileRevalidate({
             		"cacheName": "assets",
             		plugins: [
